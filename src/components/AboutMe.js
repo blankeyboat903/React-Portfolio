@@ -8,7 +8,7 @@ export default class AboutMe extends Component {
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4" id="aboutMe">
-                            <div class="card" style="width: 18rem;">
+                            <div class="card" style={{width: '18rem'}}>
                                 <img src="../images/IMG_3544.jpg" class="card-img-top" alt="Me"></img>
                                 <div class="card-body">
                                     <h5 class="card-title">About Me</h5>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import ConForm from './components/ConForm';
-import AboutMe from './components/AboutMe';
-import Portfolio from './components/Portfolio';
+import ConForm from './ConForm';
+import AboutMe from './AboutMe';
+import Portfolio from './Portfolio';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
 import {
     BrowserRouter as Router,
@@ -33,15 +33,12 @@ export default class Header extends Component {
                 </div>
                 <div>
                     <Routes>
-                        <Route path="/AboutMe">
-                            <AboutMe />
-                        </Route>
-                        <Route path="/Portfolio">
-                            <Portfolio />
-                        </Route>
-                        <Route path="/ConForm">
-                            <ConForm />
-                        </Route>
+                        <Route path="/AboutMe"
+                        element={<AboutMe/>}/>
+                        <Route path="/Portfolio"
+                        element={<Portfolio/>}/>
+                        <Route path="/ConForm"
+                        element={<ConForm/>}/>
                     </Routes>
                 </div>
             </Router>
